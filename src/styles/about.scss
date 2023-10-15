@@ -1,0 +1,149 @@
+@use 'main';
+
+.about {
+    background: main.$second-bg-color;
+    min-height: 230vh;
+
+    .about-box {
+        background: main.$bg-color;
+        padding: 3rem 2rem 4rem;
+        border-radius: 2rem;
+        text-align: center;
+        box-shadow: 0 0 1rem main.$main-color;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 75%;
+        margin: auto;
+
+
+        .icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+
+            .logo {
+                padding: 2rem;
+                height: min-content;
+                margin: 4rem 0 4rem 0;
+                width: 100px;
+                height: 100px;
+
+                p {
+                    font-size: 1.4rem;
+                }
+            }
+
+        }
+
+        h3 {
+            font-size: 3.2rem;
+
+        }
+
+
+        .resume {
+            text-align: left;
+            font-size: 1.6rem;
+            padding: 5rem;
+            line-height: 3rem;
+            width: 600px;
+
+        }
+    }
+
+    .about-img {
+        width: 50%;
+        margin: 2%;
+        background: main.$second-bg-color;
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+}
+
+.about-fullstack,
+.about-videogame {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+        #competences {
+            justify-content: flex-end;
+            margin-left: auto;
+        }
+
+        .box {
+            margin: 5rem 0 5rem 0;
+            width: 60%;
+            background: main.$bg-color;
+            padding: 5rem 10rem;
+            border-radius: 2rem;
+            box-shadow: 0 0 1rem main.$main-color;
+            flex-direction: column;
+
+            h2 {
+                text-align: left;
+                font-size: 6rem;
+
+                span {
+                    text-shadow: 1px 1px 2px main.$main-color, 0 0 1em main.$main-color, 0 0 0.2em main.$main-color;
+                }
+            }
+
+            p {}
+
+            p,
+            li {
+                font-size: 1.8rem;
+                text-shadow: main.$main-color 1px 0 5px;
+            }
+
+            li {
+                margin: 1rem 0;
+            }
+        }
+    }
+
+    h1 {
+        text-align: left;
+        font-size: 6rem;
+
+        span {
+            text-shadow: 1px 1px 2px main.$main-color, 0 0 1em main.$main-color, 0 0 0.2em main.$main-color;
+        }
+    }
+
+
+
+    .parcour-typed {
+        span {
+            font-size: 1.8rem;
+            color: white;
+        }
+
+        .type-cursor--blink {
+            visibility: hidden;
+        }
+
+    }
+
+
+
+
+    .underline {
+        font-weight: 900;
+        text-shadow: none;
+        text-decoration: underline;
+    }
+}

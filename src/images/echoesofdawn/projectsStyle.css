@@ -1,0 +1,147 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;300&display=swap");
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    text-decoration:none;
+    border:none;
+    outline:none;
+    scroll-behavior: smooth;
+    font-family:'Poppins', sans-serif;
+}
+:root {
+    --bg-color: #1f242d;
+    --second-bg-color:#323946;
+    --text-color: #fff;
+    --main-color:rgb(238, 151, 255);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background: var(--bg-color);
+    color: var(--text-color);
+}
+
+span{
+    color:var(--main-color);
+}
+
+.header{
+    position: fixed;
+    width: 100%;
+    padding: 1%;
+    background: var(--bg-color);
+    display: flex;
+    justify-content: space-between;
+    /*align-items: center;*/
+    z-index : 100;
+}
+
+.header a{
+    display: inline-flex;
+    padding-left: 10px;
+
+    width: 5rem;
+    height: 5rem;
+
+}
+.header a i{
+
+    font-size: 5rem;
+    color: var(--text-color);
+}
+
+
+.header h1{
+    font-size:3rem;
+    margin: auto;
+}
+
+.heading{
+    text-align:center;
+    margin:auto;
+    font-size:4.5rem;
+}
+
+.main-view{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    padding-top: 8%;
+}
+
+.main-img img{
+    /*box-sizing: border-box;*/
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    width: 800px;
+    height: auto;
+}
+
+
+.description{
+    padding-left: 10px;
+}
+.description p{
+    font-size: 1.4rem;
+
+}
+
+.description h1{
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.description h2{
+    font-size: 1.6rem;
+    font-weight: 700;
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: repeat(4, 2fr);
+    align-items: center;
+    gap:2.5rem;
+    padding: 10rem 9% 2rem;
+
+}
+
+
+
+.container .img-box{
+    position:relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem var(--bg-color);
+    overflow: hidden;
+    display: flex;
+
+}
+
+.container .img-box:hover{
+    border:2px solid var(--main-color);
+}
+
+.img-box img{
+    width:100%;
+    height:100%;
+    transition: .5s ease;
+}
+
+.img-box video{
+    width:100%;
+    height:100%;
+    transition: .5s ease;
+    pointer-events:none;
+}
+.img-box img:hover{
+    transform: scale(1.1);
+
+}
+

@@ -1,0 +1,36 @@
+$bg-color: #1f242d;
+$second-bg-color: #323946;
+$text-color: #fff;
+$main-color: #ee97ff;
+
+body {
+    background: $bg-color;
+    color: $text-color;
+}
+
+span {
+    color: $main-color;
+}
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.8rem;
+    background: $main-color;
+    border-radius: 4rem;
+    box-shadow: 0 0 1rem $main-color;
+    font-size: 1.6rem;
+    color: $second-bg-color;
+    letter-spacing: .1rem;
+    font-weight: 600;
+
+    &:hover {
+        box-shadow: none;
+    }
+}
+
+.heading {
+    text-align: center;
+    font-size: 4.5rem;
+    padding-bottom: 5rem;
+
+}
