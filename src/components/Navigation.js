@@ -1,5 +1,6 @@
 import React from 'react';
-import { Nav, Navbar, Container } from 'react-bootstrap';
+import { Navbar, Container, Nav } from 'react-bootstrap';
+import { Link, Element } from 'react-scroll';
 import '../styles/nav.scss';
 
 const Navigation = () => {
@@ -13,11 +14,10 @@ const Navigation = () => {
                     </div>
                     <Navbar.Collapse>
                         <Nav className="sub-nav">
-                            <Nav.Link href="./#home" >Accueil</Nav.Link>
-                            <Nav.Link href="./#about">A Propos</Nav.Link>
-                            {/*<Nav.Link href="/#services">Services</Nav.Link>*/}
-                            <Nav.Link href="./#projects">Projets</Nav.Link>
-                            <Nav.Link href="./#contact"> Contact</Nav.Link>
+                            <Link className='nav-link' to='home' smooth={true} duration={100}>Accueil</Link>
+                            <Link className='nav-link' to='about' smooth={true} duration={100}>A propos</Link>
+                            <Link className='nav-link' to='projects' smooth={true} duration={100}>Projets</Link>
+                            <Link className='nav-link' to='contact' smooth={true} duration={100}>Contact</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
