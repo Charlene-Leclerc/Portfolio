@@ -13,11 +13,11 @@ const Navigation = () => {
                     </div>
                     <Navbar.Collapse>
                         <Nav className="sub-nav">
-                            <Nav.Link href="/#home" >Accueil</Nav.Link>
-                            <Nav.Link href="/#about">A Propos</Nav.Link>
+                            <Nav.Link href="./#home" >Accueil</Nav.Link>
+                            <Nav.Link href="./#about">A Propos</Nav.Link>
                             {/*<Nav.Link href="/#services">Services</Nav.Link>*/}
-                            <Nav.Link href="/#projects">Projets</Nav.Link>
-                            <Nav.Link href="/#contact"> Contact</Nav.Link>
+                            <Nav.Link href="./#projects">Projets</Nav.Link>
+                            <Nav.Link href="./#contact"> Contact</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>
