@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/react_portfolio/static/css/main.14168d42.css",
+    "main.js": "/react_portfolio/static/js/main.bd3d130d.js",
+    "static/media/MapHyperbawl.mp4": "/react_portfolio/static/media/MapHyperbawl.bb064e14154da8507dd7.mp4",
+    "static/media/kiraTrailer.mp4": "/react_portfolio/static/media/kiraTrailer.08e1745b01720ac4c3c9.mp4",
+    "static/media/echoesbuilding.mp4": "/react_portfolio/static/media/echoesbuilding.29392768ccc48d6b8f0d.mp4",
+    "static/media/HyperbawlTrailer.mp4": "/react_portfolio/static/media/HyperbawlTrailer.12032e8fac13795671ad.mp4",
+    "static/media/echoesgrind.mp4": "/react_portfolio/static/media/echoesgrind.9461cade07f5f86a40e8.mp4",
+    "static/media/PersoHyperbawl.mp4": "/react_portfolio/static/media/PersoHyperbawl.da298ea8c8d51674b617.mp4",
+    "static/media/competences.mp4": "/react_portfolio/static/media/competences.4cde8cd2b3ee92059664.mp4",
+    "static/media/europmadnessgif.gif": "/react_portfolio/static/media/europmadnessgif.241d4fc072f78619301a.gif",
+    "static/media/Reseau.mp4": "/react_portfolio/static/media/Reseau.ce378422ec78cc8ef818.mp4",
+    "static/media/echoesTrailer.mp4": "/react_portfolio/static/media/echoesTrailer.dd7e6414b34ba328cb78.mp4",
+    "static/media/Charlene_Avatar.png": "/react_portfolio/static/media/Charlene_Avatar.30a3123fd5ba7d172569.png",
+    "static/media/trinitite.PNG": "/react_portfolio/static/media/trinitite.ff4435dccbf8350129d1.PNG",
+    "static/media/kiraMenu.png": "/react_portfolio/static/media/kiraMenu.7d3c84fb53e25e0c51cc.png",
+    "static/media/DogAPI.PNG": "/react_portfolio/static/media/DogAPI.220c9037e6e5b8d631ce.PNG",
+    "static/media/menuechoes.png": "/react_portfolio/static/media/menuechoes.553fbb12d1c72cc4e718.png",
+    "static/media/europmadnesspower.png": "/react_portfolio/static/media/europmadnesspower.a9d3e56d06c9a18b4640.png",
+    "static/media/figma.PNG": "/react_portfolio/static/media/figma.074a2087f3b6bb50e6b7.PNG",
+    "static/media/europmadnessgeneral.png": "/react_portfolio/static/media/europmadnessgeneral.2e9e262c5799f612ea87.png",
+    "static/media/HyperbawIMG.png": "/react_portfolio/static/media/HyperbawIMG.caa8c1905c38cd1e6fe6.png",
+    "static/media/CV_Charlene_Leclerc.pdf": "/react_portfolio/static/media/CV_Charlene_Leclerc.ead6d302ab306c689563.pdf",
+    "static/media/europmadnessmap.png": "/react_portfolio/static/media/europmadnessmap.101449b30aa039b64f08.png",
+    "static/media/html.PNG": "/react_portfolio/static/media/html.c0ab0d816a4cc6b08f8b.PNG",
+    "index.html": "/react_portfolio/index.html",
+    "main.14168d42.css.map": "/react_portfolio/static/css/main.14168d42.css.map",
+    "main.bd3d130d.js.map": "/react_portfolio/static/js/main.bd3d130d.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.14168d42.css",
+    "static/js/main.bd3d130d.js"
+  ]
+}
