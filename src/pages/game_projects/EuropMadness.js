@@ -23,9 +23,9 @@ export const Boxes = ({ linkId, imgId, img_src }) => {
     return (
 
         <div className="img-box">
-            <a href="#" id={linkId} onClick={handleClick}>
+            <button id={linkId} onClick={handleClick}>
                 <img id={`${imgId}`} src={`${img_src}`} alt="" width="1276" height="717" />
-            </a>
+            </button>
 
         </div>
 

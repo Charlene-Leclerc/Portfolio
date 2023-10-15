@@ -3,6 +3,7 @@
 .projects {
     background: main.$bg-color;
 
+
     .all {
 
         display: flex;
@@ -10,9 +11,7 @@
         align-items: center;
         flex-wrap: wrap;
         gap: 4rem;
-
-
-
+        margin: 7.5% 0;
 
         .nav-link {
             color: main.$main-color;

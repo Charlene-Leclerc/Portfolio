@@ -1,7 +1,5 @@
 import React from 'react';
 import { GamesData } from '../../models/projects-models';
-
-import { Link } from 'react-router-dom';
 import ProjectsTemplate from '../../parents/ProjectsTemplate'
 
 const GameProjects = () => {

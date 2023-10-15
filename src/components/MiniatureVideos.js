@@ -2,7 +2,6 @@ import React from 'react';
 
 
 const MiniatureVideos = ({ videos, handleThumbnailClick }) => {
-    { console.log(`miniatures videos : ${videos}`) }
     return (
         <div className="container">
             {videos.map(video => (

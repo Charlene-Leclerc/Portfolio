@@ -1,0 +1,60 @@
+@use 'main';
+
+.contact {
+    background: main.$second-bg-color;
+
+    .formular {
+        display: flex;
+        justify-content: center;
+        margin: auto;
+        max-width: 600px;
+        background: main.$bg-color;
+        border-radius: 2rem;
+        padding: 4rem 6rem;
+
+        form {
+            display: inline-block;
+            justify-content: center;
+            width: 100%;
+            background: var(--main-color);
+        }
+
+        .submiting {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            .send-state {
+                font-size: 2rem;
+            }
+        }
+
+
+    }
+
+    .input-field,
+    textarea {
+        width: 100%;
+        height: auto;
+        margin: 5px;
+        border-radius: 5px;
+        padding: 10px;
+    }
+
+
+    label {
+        margin-left: 10px;
+
+        font-size: 2rem;
+    }
+
+    input {
+        margin-right: 2rem;
+        margin-top: 2rem;
+
+    }
+
+    input:focus-visible {
+        outline: none;
+    }
+}
