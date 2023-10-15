@@ -11,6 +11,9 @@
         flex-wrap: wrap;
         gap: 4rem;
 
+
+
+
         .nav-link {
             color: main.$main-color;
         }
@@ -26,6 +29,7 @@
             border: .2rem solid main.$bg-color;
             transition: .5s ease;
             height: 320px;
+
 
             &:hover {
                 border-color: main.$main-color;

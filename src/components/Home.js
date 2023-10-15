@@ -11,7 +11,6 @@ const Home = () => {
             <div className="home-img">
                 <img src={avatar} alt="" />
             </div>
-
             <div className="home-content">
 
                 <h3>Bonjour :)</h3>

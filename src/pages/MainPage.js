@@ -1,7 +1,7 @@
 import React from 'react';
 import Home from '../components/Home';
 import About from '../components/About';
-import Projects from '../components/projects/Projects';
+import Projects from '../components/Projects';
 
 
 const MainPage = () => {
