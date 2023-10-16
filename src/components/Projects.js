@@ -9,8 +9,13 @@ const Projects = () => {
     return (
 
 
-        <section className="projects" id="projects">
-            <h2 className="heading">Mes <span>Projets</span></h2>
+        <section className="projects">
+            <div className="head">
+
+                <h2 className="heading">Mes <span>Projets</span></h2>
+
+            </div>
+
             <div className="all">
                 <div className="games">
                     <h2>Projets <span>jeux vidéos</span></h2>

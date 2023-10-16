@@ -32,7 +32,7 @@ const Contact = () => {
     };
 
     return (
-        <section className='contact' id='contact'>
+        <section className='contact'>
             <h2 className="heading">Contact</h2>
             <div className="formular">
                 <form ref={form} onSubmit={sendEmail}>
@@ -63,7 +63,7 @@ const Contact = () => {
                     </div>
                     <div className="submiting">
                         <input type="submit" value="Envoyer" className='btn' />
-                        <p className='send-state'>test</p>
+
                         {visible ?
                             success ? <p className='send-state'>L'email a été envoyé avec succès !</p>
                                 : <p className='send-state'>Un problème est survenu lors de l'envoi de votre mail, il n'a pas pu être envoyé</p>

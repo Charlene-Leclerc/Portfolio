@@ -3,6 +3,11 @@
 .projects {
     background: main.$bg-color;
 
+    .head {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
 
     .all {
 

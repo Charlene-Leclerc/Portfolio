@@ -29,9 +29,11 @@
         }
 
         .nav-activ {
-            font-size: 1.7rem;
-            padding: 1.4rem;
+
             color: main.$main-color !important;
+
+
+
         }
 
         .nav-inactiv {
@@ -40,9 +42,27 @@
             color: main.$text-color !important;
         }
 
+        .nav-brand {
+            font-size: 3rem;
+
+            &:hover {
+                cursor: pointer;
+            }
+        }
+
         .nav-link {
-            font-size: 1.7rem;
             color: main.$text-color;
+
+            &:hover {
+                color: main.$main-color !important;
+
+            }
+        }
+
+        .nav-link,
+        .nav-activ {
+            font-size: 1.7rem;
+
             padding: 1.4rem;
 
             &:hover {

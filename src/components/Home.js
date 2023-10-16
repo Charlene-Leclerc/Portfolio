@@ -7,7 +7,7 @@ import CV from '../documents/CV_Charlene_Leclerc.pdf'
 const Home = () => {
 
     return (
-        <section className="home" id="home">
+        <section className="home">
             <div className="home-img">
                 <img src={avatar} alt="" />
             </div>

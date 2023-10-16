@@ -5,7 +5,7 @@ import Logo from './Logo';
 import { LOGOS_WEB, LOGOS_GAME } from '../models/logos-models';
 const About = () => {
     return (
-        <section className="about" id="about">
+        <section className="about">
             <h2 className="heading"><span>A Propos</span> de Moi</h2>
 
 
