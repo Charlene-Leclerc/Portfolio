@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/react_portfolio/static/css/main.70ccc719.css",
-    "main.js": "/react_portfolio/static/js/main.3279726e.js",
+    "main.css": "/react_portfolio/static/css/main.6b106bc6.css",
+    "main.js": "/react_portfolio/static/js/main.8c3b9c61.js",
     "static/media/MapHyperbawl.mp4": "/react_portfolio/static/media/MapHyperbawl.bb064e14154da8507dd7.mp4",
     "static/media/kiraTrailer.mp4": "/react_portfolio/static/media/kiraTrailer.08e1745b01720ac4c3c9.mp4",
     "static/media/echoesbuilding.mp4": "/react_portfolio/static/media/echoesbuilding.29392768ccc48d6b8f0d.mp4",
@@ -25,11 +25,11 @@
     "static/media/europmadnessmap.png": "/react_portfolio/static/media/europmadnessmap.101449b30aa039b64f08.png",
     "static/media/html.PNG": "/react_portfolio/static/media/html.c0ab0d816a4cc6b08f8b.PNG",
     "index.html": "/react_portfolio/index.html",
-    "main.70ccc719.css.map": "/react_portfolio/static/css/main.70ccc719.css.map",
-    "main.3279726e.js.map": "/react_portfolio/static/js/main.3279726e.js.map"
+    "main.6b106bc6.css.map": "/react_portfolio/static/css/main.6b106bc6.css.map",
+    "main.8c3b9c61.js.map": "/react_portfolio/static/js/main.8c3b9c61.js.map"
   },
   "entrypoints": [
-    "static/css/main.70ccc719.css",
-    "static/js/main.3279726e.js"
+    "static/css/main.6b106bc6.css",
+    "static/js/main.8c3b9c61.js"
   ]
 }
