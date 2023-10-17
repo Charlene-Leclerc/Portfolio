@@ -8,21 +8,15 @@
         background: main.$bg-color;
         padding: 3rem 2rem 4rem;
         border-radius: 2rem;
+        @include main.flex($dir: column);
         text-align: center;
         box-shadow: 0 0 1rem main.$main-color;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
         width: 75%;
         margin: auto;
 
 
         .icon {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-
+            @include main.flex();
 
             .logo {
                 padding: 2rem;
@@ -45,8 +39,8 @@
 
 
         .resume {
-            text-align: left;
-            font-size: 1.6rem;
+            @include main.text_data(left, 1.6rem);
+
             padding: 5rem;
             line-height: 3rem;
             width: 600px;
@@ -69,13 +63,10 @@
 
 .about-fullstack,
 .about-videogame {
-    display: flex;
-    flex-direction: column;
+    @include main.flex($dir: column);
     width: 100%;
 
     .content {
-        display: flex;
-        flex-direction: column;
         width: 100%;
 
         #competences {
@@ -88,20 +79,18 @@
             width: 60%;
             background: main.$bg-color;
             padding: 5rem 10rem;
+
             border-radius: 2rem;
             box-shadow: 0 0 1rem main.$main-color;
             flex-direction: column;
 
             h2 {
-                text-align: left;
-                font-size: 6rem;
+                @include main.text_data(left, 6rem);
 
                 span {
                     text-shadow: 1px 1px 2px main.$main-color, 0 0 1em main.$main-color, 0 0 0.2em main.$main-color;
                 }
             }
-
-            p {}
 
             p,
             li {
@@ -116,15 +105,12 @@
     }
 
     h1 {
-        text-align: left;
-        font-size: 6rem;
+        @include main.text_data(center, 6rem);
 
         span {
             text-shadow: 1px 1px 2px main.$main-color, 0 0 1em main.$main-color, 0 0 0.2em main.$main-color;
         }
     }
-
-
 
     .parcour-typed {
         span {
@@ -135,11 +121,7 @@
         .type-cursor--blink {
             visibility: hidden;
         }
-
     }
-
-
-
 
     .underline {
         font-weight: 900;

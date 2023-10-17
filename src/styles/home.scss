@@ -1,26 +1,17 @@
 @use 'main';
 
 .home {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-
-
+    @include main.flex();
 
     .social-media {
 
         a {
-            display: inline-flex;
-            justify-content: center;
-            align-items: center;
+            @include main.flex($display: inline-flex);
             width: 4rem;
             height: 4rem;
             background: transparent;
-            border: .2rem solid main.$main-color;
-            border-radius: 50%;
-            font-size: 2rem;
-            color: main.$main-color;
+            @include main.border(.2rem, main.$main-color, 50%);
+            @include main.text_data($fontsize: 2rem, $color: main.$main-color);
             margin: 3rem 1.5rem 3rem 0;
             transition: .5s ease;
 

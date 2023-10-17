@@ -24,14 +24,14 @@ const WebProjects = () => {
             img: require('../../images/DogAPI.PNG'),
             title: "Utilisation d'API",
             resume: "Développement d'une application avec l'utilisation de l'API The Dog API",
-            link: '/web_projects/dog_api'
+            link: 'https://charlene-leclerc.github.io/The-Dog-API/'
         },
         {
             id: 2,
             img: require('../../images/trinitite.PNG'),
             title: "React Trinitite Portfolio",
             resume: "Réalisation d'un site complet en React JS",
-            link: '/web_projects/trinitite'
+            link: 'https://charlene-leclerc.github.io/trinitite-portfolio/'
         },
     ]
 

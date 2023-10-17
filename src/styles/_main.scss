@@ -3,6 +3,25 @@ $second-bg-color: #323946;
 $text-color: #fff;
 $main-color: #ee97ff;
 
+@mixin flex($display: flex, $dir: line, $justify: center) {
+    display: $display;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: center;
+}
+
+@mixin text_data($align: center, $fontsize, $font-weight: 400, $color: $text-color) {
+    text-align: $align;
+    font-size: $fontsize;
+    font-weight: $font-weight;
+    color: $color;
+}
+
+@mixin border($border_size, $border_color, $border_radius: 2rem) {
+    border: $border_size solid $border_color;
+    border-radius: $border_radius;
+}
+
 body {
     background: $bg-color;
     color: $text-color;
@@ -29,8 +48,7 @@ span {
 }
 
 .heading {
-    text-align: center;
-    font-size: 4.5rem;
+    @include text_data($fontsize: 4.5rem);
     padding-bottom: 5rem;
 
 }

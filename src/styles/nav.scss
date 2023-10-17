@@ -2,10 +2,10 @@
 
 
 
+
 .header {
     background: main.$second-bg-color;
     padding: 2rem 9% !important;
-
 
     .container {
         position: fixed;
@@ -14,55 +14,30 @@
         width: 100%;
         padding: 2rem 9%;
         background: main.$second-bg-color;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include main.flex($justify: space-between);
         z-index: 100;
 
-        .navbar-brand {
-
-            font-size: 2.5rem;
-            font-weight: 300;
+        .nav-brand {
+            @include main.text_data(left, 2.5rem, 300);
             color: main.$text-color;
-
-
         }
 
         .nav-activ {
-
             color: main.$main-color !important;
-
-
-
         }
 
-        .nav-inactiv {
-            font-size: 1.7rem;
-            padding: 1.4rem;
-            color: main.$text-color !important;
-        }
 
         .nav-brand {
-            font-size: 3rem;
+            @include main.text_data(left, 3rem);
 
             &:hover {
                 cursor: pointer;
-            }
-        }
-
-        .nav-link {
-            color: main.$text-color;
-
-            &:hover {
-                color: main.$main-color !important;
-
             }
         }
 
         .nav-link,
         .nav-activ {
             font-size: 1.7rem;
-
             padding: 1.4rem;
 
             &:hover {
@@ -70,10 +45,30 @@
                 cursor: pointer;
 
             }
+        }
 
+        .nav-link {
+            color: main.$text-color;
+        }
 
+        .back {
+            @include main.text_data(left, 1.7rem);
 
         }
+
+        .sub-nav {
+            @include main.flex()
+        }
+
+        .fa-arrow-right-from-bracket {
+            @include main.text_data(left, 2.5rem);
+
+            &:hover {
+                color: main.$main-color !important;
+            }
+        }
+
+
     }
 
 }

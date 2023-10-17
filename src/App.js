@@ -8,7 +8,6 @@ import GameProjects from './pages/game_projects/GameProjects';
 import MainPage from './pages/MainPage';
 import AboutGame from './pages/AboutGame';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Navigation from './components/Navigation';
 import WebProjects from './pages/web_projects/WebProjects';
 import ScrollToTop from './components/ScrollToTop';
 
@@ -18,7 +17,7 @@ function App() {
 
   return (
     <BrowserRouter>
-      <Navigation />
+
       <ScrollToTop />
       <Routes>
         <Route path='/' element={<MainPage />} />

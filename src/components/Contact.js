@@ -1,6 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import '../styles/contact.scss';
 import emailjs from '@emailjs/browser';
+import { ContactLabel, ContactMessage } from './ContactLabel';
 const Contact = () => {
 
     const [success, setSuccess] = useState(false);
@@ -22,7 +23,7 @@ const Contact = () => {
             .then((result) => {
                 setSuccess(true);
 
-                console.log(success);
+
             }).catch((error) => {
 
 
@@ -36,31 +37,11 @@ const Contact = () => {
             <h2 className="heading">Contact</h2>
             <div className="formular">
                 <form ref={form} onSubmit={sendEmail}>
-
-                    <label htmlFor="nom">Nom/Prénom*</label>
-                    <div>
-                        <input className="input-field" type="text" name='user_name' required />
-                    </div>
-
-                    <label htmlFor="mail">Adresse e-mail*</label>
-                    <div>
-                        <input className="input-field" type="email" placeholder="mail@gmail.com" name='user_email' required />
-                    </div>
-
-                    <label htmlFor="num">Numéro de téléphone</label>
-                    <div>
-                        <input className="input-field" type="text" placeholder="+33612345678" />
-                    </div>
-
-                    <label htmlFor="birthdate">Date de naissance</label>
-                    <div>
-                        <input className="input-field" type="date" placeholder="jj/mm/aaaa" />
-                    </div>
-
-                    <label htmlFor="message">Message*</label>
-                    <div>
-                        <textarea cols="30" rows="10" name="message" placeholder="Vous avez un message? Ecrivez-moi ici!" required></textarea>
-                    </div>
+                    <ContactLabel htmlFor="nom" input_type="text" label_name="Nom/Prénom" name="user_name" isRequired={true} />
+                    <ContactLabel htmlFor="mail" input_type="email" label_name="Adresse e-mail" name="user_email" isRequired={true} placeholder="yourmail@gmail.com" />
+                    <ContactLabel htmlFor="num" input_type="number" label_name="Numéro de téléphone" isRequired={false} placeholder="+33612345678" />
+                    <ContactLabel htmlFor="birthdate" input_type="date" label_name="Date de naissance" isRequired={false} placeholder="jj/mm/aaaa" />
+                    <ContactMessage />
                     <div className="submiting">
                         <input type="submit" value="Envoyer" className='btn' />
 
