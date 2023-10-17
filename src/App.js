@@ -24,10 +24,10 @@ function App() {
         <Route path='/about-fullstack' element={<AboutFullStack />} />
         <Route path='/about-videogame' element={<AboutGame />} />
         <Route path='/game_projects' element={<GameProjects />} />
-        <Route path='/game_projects/europ-madness' element={<EuropMadness />} />
-        <Route path='/game_projects/echoes-of-dawn' element={<EchoesOfDawn />} />
-        <Route path='/game_projects/hyperbawl' element={<Hyperbawl />} />
-        <Route path='/game_projects/le-monde-de-kira' element={<Kira />} />
+        <Route path='/europ-madness' element={<EuropMadness />} />
+        <Route path='/echoes-of-dawn' element={<EchoesOfDawn />} />
+        <Route path='/hyperbawl' element={<Hyperbawl />} />
+        <Route path='/le-monde-de-kira' element={<Kira />} />
         <Route path='/web_projects' element={<WebProjects />} />
         <Route path='*' element={<MainPage />} />
       </Routes >

@@ -27,7 +27,7 @@ const WebProjects = () => {
             link: 'https://charlene-leclerc.github.io/The-Dog-API/'
         },
         {
-            id: 2,
+            id: 3,
             img: require('../../images/trinitite.PNG'),
             title: "React Trinitite Portfolio",
             resume: "Réalisation d'un site complet en React JS",
