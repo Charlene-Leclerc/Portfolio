@@ -17,10 +17,10 @@ const Home = () => {
                 <h1>Je suis Charlène Leclerc</h1>
                 <h3>Je suis <span>Développeuse jeux vidéo</span> et <span>Full-Stack</span> !</h3>
                 <div className="social-media">
-                    <a href="https://www.linkedin.com/in/charl%C3%A8ne-leclerc-67ba0b1ba/">
+                    <a href="https://www.linkedin.com/in/charl%C3%A8ne-leclerc-67ba0b1ba/" target='_blank'>
                         <FontAwesomeIcon icon={faLinkedinIn} />
                     </a>
-                    <a href="https://github.com/Charlene-Leclerc">
+                    <a href="https://github.com/Charlene-Leclerc" target='_blank'>
                         <FontAwesomeIcon icon={faGithub} />
                     </a>
                 </div>
