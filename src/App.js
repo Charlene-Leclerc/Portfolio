@@ -10,6 +10,8 @@ import AboutGame from './pages/AboutGame';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import WebProjects from './pages/web_projects/WebProjects';
 import ScrollToTop from './components/ScrollToTop';
+import { baseUrl, projectUrl } from './config';
+
 
 function App() {
 
@@ -20,15 +22,15 @@ function App() {
 
       <ScrollToTop />
       <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/about-fullstack' element={<AboutFullStack />} />
-        <Route path='/about-videogame' element={<AboutGame />} />
-        <Route path='/game_projects' element={<GameProjects />} />
-        <Route path='/europ-madness' element={<EuropMadness />} />
-        <Route path='/echoes-of-dawn' element={<EchoesOfDawn />} />
-        <Route path='/hyperbawl' element={<Hyperbawl />} />
-        <Route path='/le-monde-de-kira' element={<Kira />} />
-        <Route path='/web_projects' element={<WebProjects />} />
+        <Route path={baseUrl} element={<MainPage />} />
+        <Route path={`${baseUrl}/about-fullstack`} element={<AboutFullStack />} />
+        <Route path={`${baseUrl}/about-videogame`} element={<AboutGame />} />
+        <Route path={`${baseUrl}/game_projects`} element={<GameProjects />} />
+        <Route path={`${projectUrl}/europ-madness`} element={<EuropMadness />} />
+        <Route path={`${projectUrl}/echoes-of-dawn`} element={<EchoesOfDawn />} />
+        <Route path={`${projectUrl}/hyperbawl`} element={<Hyperbawl />} />
+        <Route path={`${projectUrl}/le-monde-de-kira`} element={<Kira />} />
+        <Route path={`${baseUrl}/web_projects`} element={<WebProjects />} />
         <Route path='*' element={<MainPage />} />
       </Routes >
     </BrowserRouter >

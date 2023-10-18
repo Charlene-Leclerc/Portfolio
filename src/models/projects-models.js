@@ -1,32 +1,32 @@
-
+import { projectUrl } from '../config';
 export const GamesData = [
     {
         id: 0,
         img: require('../images/europmadness/europmadnessmap.png'),
         title: 'EUROP MADNESS',
         resume: "Combattez des hordes d'ennemis de plus en plus forte, placez et améliroez vos tourelles stratégiquement, utilisez vos sorts et n'hesitez pas à jouez avec le temps pour prendre les meilleurs décisisons!",
-        link: '/europ-madness'
+        link: `${projectUrl}/europ-madness`,
     },
     {
         id: 1,
         img: require('../images/echoesofdawn/menuechoes.png'),
         title: 'ECHOES OF DAWN',
         resume: "Avancez dans un monde rempl d'ennemi, visitez, construisez les bâtiments nécessaire à votre progression pour améliorer votre équipement et affronter l'ultime boss!",
-        link: '/echoes-of-dawn'
+        link: `${projectUrl}/echoes-of-dawn`
     },
     {
         id: 2,
         img: require('../images/hyperbawl/HyperbawIMG.png'),
         title: 'HYPERBAWL',
         resume: "Prenez part à un match d'hyperbawl, en multijoueur 3vs3, et remportez la victoire !",
-        link: '/hyperbawl'
+        link: `${projectUrl}/hyperbawl`
     },
     {
         id: 3,
         img: require('../images/kira/kiraMenu.png'),
         title: 'LE MONDE DE KIRA',
         resume: "Explorez les lieux, discutez avec d'autres amis chats, accomplissez des quêtes et partez combattre vos pires ennemis lors de vos périple.",
-        link: '/le-monde-de-kira'
+        link: `${projectUrl}/le-monde-de-kira`
     },
 ];
 

@@ -3,6 +3,7 @@ import '../styles/about.scss';
 import { Link } from 'react-router-dom';
 import Logo from './Logo';
 import { LOGOS_WEB, LOGOS_GAME } from '../models/logos-models';
+import { baseUrl } from '../config';
 const About = () => {
     return (
         <section className="about">
@@ -16,7 +17,7 @@ const About = () => {
                     Je suis passionnée par le développement et je suis également diplômée en développement de jeux vidéo (RNCP 6).<br />
                     Au fil de mon parcours, j'ai acquis une solide expertise dans le domaine du développement...
                 </p>
-                <Link to='/about-fullstack' className="btn">En savoir plus</Link>
+                <Link to={`${baseUrl}/about-fullstack`} className="btn">En savoir plus</Link>
                 <div className="icon">
                     {LOGOS_WEB.map((icon, index) => (
 
@@ -32,7 +33,7 @@ const About = () => {
                     et d'apprendre plusieurs language de programmation,
                     tel que les languages Lua, C, C# (Unity) et C++ (Unreal).
                 </p>
-                <Link to='/about-videogame' className="btn">En savoir plus</Link>
+                <Link to={`${baseUrl}/about-videogame`} className="btn">En savoir plus</Link>
                 <div className="icon">
                     {LOGOS_GAME.map((logo, index) => (
                         <Logo img={logo.img} alt={logo.name} name={logo.name} key={index} />

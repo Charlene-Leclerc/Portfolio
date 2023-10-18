@@ -2,8 +2,9 @@ import React from 'react';
 import '../styles/projects.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons';
-
 import { Link } from 'react-router-dom';
+import { baseUrl } from '../config';
+
 const Projects = () => {
 
     return (
@@ -22,13 +23,13 @@ const Projects = () => {
                     <p>Cliquez sur l'icone
                         <span><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon' /></span>
                         pour découvrir mes projets jeux vidéo !</p>
-                    <Link to="/game_projects" className='nav-link'><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon icon btn' /></Link>
+                    <Link to={`${baseUrl}/game_projects`} className='nav-link'><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon icon btn' /></Link>
                 </div>
                 <div className="web">
                     <h2>Projets <span>Web</span></h2>
                     <p>Cliquez sur l'icone
                         <span><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon' /></span> pour découvrir mes projets web !</p>
-                    <Link to="/web_projects" className='nav-link'><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon icon btn' /></Link>
+                    <Link to={`${baseUrl}/web_projects`} className='nav-link'><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon icon btn' /></Link>
                 </div>
             </div>
 
