@@ -16,8 +16,8 @@ const ProjectsTemplate = ({ projects }) => {
 
                             <h4>{project.title}</h4>
                             <p>{project.resume}</p>
-                            <Link to={`${project.link}`} target='_blank'><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon' /></Link>
-                            {console.log(project.link)}
+                            <Link to={`${project.link}`}><FontAwesomeIcon icon={faArrowUpRightFromSquare} className='fa-icon' /></Link>
+
                         </div>
                     </div>
 
