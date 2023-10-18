@@ -4,7 +4,9 @@ import { Navbar, Nav, Container } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRightFromBracket } from '@fortawesome/free-solid-svg-icons';
 
-const BackHomeNav = () => {
+const BackHomeNav = (back_section) => {
+
+
     return (
         <header className='header'>
             <Navbar collapseOnSelect expand="lg">
@@ -15,7 +17,7 @@ const BackHomeNav = () => {
                     <Navbar.Collapse>
                         <Nav className="sub-nav">
                             <p className='back'>Retour vers l'accueil</p>
-                            <Link to='/home' className='nav-link'>
+                            <Link to='/home' className='nav-link' >
 
                                 <FontAwesomeIcon icon={faArrowRightFromBracket} style={{ color: "#ffffff", }} />
                             </Link>

@@ -6,7 +6,7 @@ import BackHomeNav from '../components/BackHomeNav';
 const AboutFullStack = () => {
     return (
         <>
-            <BackHomeNav />
+            <BackHomeNav back_section={{ back_section: 'about' }} />
             <section className='about-fullstack' id='about-fullstack'>
                 <h1>Formation Développeur <span>Full-Stack</span></h1>
                 <AboutTemplate data={AboutData} />

@@ -12,7 +12,7 @@ export const ContactLabel = ({ htmlFor, label_name, input_type, name, isRequired
                 </>
                 :
                 <>
-                    <label htmlFor="nom">{label_name}</label>
+                    <label htmlFor={htmlFor}>{label_name}</label>
                     <div>
                         <input className="input-field" type={input_type} name={name} placeholder={placeholder} />
                     </div>

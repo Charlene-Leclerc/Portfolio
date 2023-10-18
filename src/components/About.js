@@ -6,7 +6,7 @@ import { LOGOS_WEB, LOGOS_GAME } from '../models/logos-models';
 import { baseUrl } from '../config';
 const About = () => {
     return (
-        <section className="about">
+        <section className="about" id='about'>
             <h2 className="heading"><span>A Propos</span> de Moi</h2>
 
 
