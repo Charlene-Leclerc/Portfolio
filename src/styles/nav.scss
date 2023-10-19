@@ -2,9 +2,14 @@
 
 
 .navbar {
-    @include main.flex($justify: space-between);
+
     background-color: main.$second-bg-color;
     padding: 2rem 5%;
+}
+
+.collapse {
+    justify-content: right;
+    margin: auto;
 }
 
 .nav-link {
