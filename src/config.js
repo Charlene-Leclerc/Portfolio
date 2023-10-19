@@ -1,2 +1,3 @@
 export const baseUrl = '/portfolio';
-export const projectUrl = '/portfolio/game_projects';
+export const gameProjectUrl = '/portfolio/game_projects';
+export const webProjectUrl = '/portfolio/web_projects';

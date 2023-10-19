@@ -1,5 +1,7 @@
 import React from 'react';
 import '../../styles/game-pages-pres.scss';
+import BackNavigation from '../../components/BackHomeNav';
+import { baseUrl } from '../../config';
 
 const images = {
     gif: require('../../images/europmadness/europmadnessgif.gif'),
@@ -35,6 +37,7 @@ const EuropMadness = () => {
 
     return (
         <>
+            <BackNavigation link={`${baseUrl}/game_projects`} />
             <div className='main-view'>
                 <h2 className="heading">Europ Madness</h2>
                 <div className="main-content">
