@@ -17,6 +17,13 @@
         @include main.flex($justify: space-between);
         z-index: 100;
 
+        .navbar {
+            height: 60px;
+            background-color: #fef7e5;
+            position: relative;
+            border: 2px solid pink;
+        }
+
         .nav-brand {
             @include main.text_data(left, 2.5rem, 300);
             color: main.$text-color;
