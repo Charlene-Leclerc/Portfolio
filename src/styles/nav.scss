@@ -1,81 +1,90 @@
 @use 'main';
 
 
+.navbar {
+    @include main.flex($justify: space-between);
+    background-color: main.$second-bg-color;
+    padding: 2rem 5%;
+}
 
+.nav-link {
+    font-size: 1.7rem;
+    padding: 0 1rem;
+    color: main.$text-color;
 
-.header {
+    &:hover {
+        color: main.$main-color;
+    }
+}
+
+.nav-activ {
+    color: main.$main-color !important;
+}
+
+.navbar-brand {
+    font-size: 3rem;
+    color: main.$text-color;
+}
+
+/*.container-fluid {
+    position: fixed;
+
     background: main.$second-bg-color;
-    padding: 2rem 9% !important;
+    @include main.flex($justify: space-between);
+    z-index: 100;
 
-    .container {
-        position: fixed;
-        top: 0;
-        left: 0;
-        width: 100%;
-        padding: 2rem 9%;
-        background: main.$second-bg-color;
-        @include main.flex($justify: space-between);
-        z-index: 100;
 
-        .navbar {
-            height: 60px;
-            background-color: #fef7e5;
-            position: relative;
-            border: 2px solid pink;
+
+    .nav-brand {
+        @include main.text_data(left, 2.5rem, 300);
+        color: main.$text-color;
+    }
+
+    .nav-activ {
+        color: main.$main-color !important;
+    }
+
+
+    .nav-brand {
+        @include main.text_data(left, 3rem);
+
+        &:hover {
+            cursor: pointer;
         }
+    }
 
-        .nav-brand {
-            @include main.text_data(left, 2.5rem, 300);
-            color: main.$text-color;
-        }
+    .nav-link,
+    .nav-activ {
+        font-size: 1.7rem;
+        padding: 1.4rem;
 
-        .nav-activ {
+        &:hover {
             color: main.$main-color !important;
-        }
-
-
-        .nav-brand {
-            @include main.text_data(left, 3rem);
-
-            &:hover {
-                cursor: pointer;
-            }
-        }
-
-        .nav-link,
-        .nav-activ {
-            font-size: 1.7rem;
-            padding: 1.4rem;
-
-            &:hover {
-                color: main.$main-color !important;
-                cursor: pointer;
-
-            }
-        }
-
-        .nav-link {
-            color: main.$text-color;
-        }
-
-        .back {
-            @include main.text_data(left, 1.7rem);
+            cursor: pointer;
 
         }
+    }
 
-        .sub-nav {
-            @include main.flex()
-        }
+    .nav-link {
+        color: main.$text-color;
+    }
 
-        .fa-arrow-right-from-bracket {
-            @include main.text_data(left, 2.5rem);
-
-            &:hover {
-                color: main.$main-color !important;
-            }
-        }
-
+    .back {
+        @include main.text_data(left, 1.7rem);
 
     }
 
-}
+    .sub-nav {
+        @include main.flex()
+    }
+
+    .fa-arrow-right-from-bracket {
+        @include main.text_data(left, 2.5rem);
+
+        &:hover {
+            color: main.$main-color !important;
+        }
+    }
+
+
+}*/
