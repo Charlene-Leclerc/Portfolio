@@ -56,7 +56,31 @@ span {
 }
 
 .heading {
-    @include text_data($fontsize: 4.5rem);
+
     padding-bottom: 5rem;
 
+}
+
+@media (min-width: 1024) {
+    .heading {
+        @include text_data($fontsize: 4.5rem);
+
+
+    }
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+    .heading {
+        @include text_data($fontsize: 4rem);
+
+
+    }
+}
+
+@media (max-width: 767px) {
+    .heading {
+        @include text_data($fontsize: 3.5rem);
+
+
+    }
 }
