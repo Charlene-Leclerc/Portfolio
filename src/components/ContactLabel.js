@@ -4,19 +4,19 @@ export const ContactLabel = ({ htmlFor, label_name, input_type, name, isRequired
     return (
         <>
             {isRequired ?
-                <>
+                <div className="row">
                     <label htmlFor={htmlFor}>{`${label_name}*`}</label>
                     <div>
                         <input className="input-field" type={input_type} name={name} placeholder={placeholder} required />
                     </div>
-                </>
+                </div>
                 :
-                <>
+                <div className="row">
                     <label htmlFor={htmlFor}>{label_name}</label>
                     <div>
                         <input className="input-field" type={input_type} name={name} placeholder={placeholder} />
                     </div>
-                </>
+                </div>
             }
 
         </>

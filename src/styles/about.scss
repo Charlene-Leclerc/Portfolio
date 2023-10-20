@@ -29,6 +29,7 @@
             }
         }
 
+
         h3 {
             font-size: 3.2rem;
 
@@ -44,13 +45,9 @@
         }
 
         .about-box {
-
-
-
             box-shadow: 0 0 1rem main.$main-color;
             width: 75%;
             margin: auto;
-
         }
 
     }
@@ -97,7 +94,7 @@
                 @include main.flex($dir: column, $justify: flex-start);
 
                 p {
-                    font-size: 1.1rem;
+                    font-size: 1.2rem;
 
                 }
             }
@@ -109,25 +106,16 @@
         }
 
         .resume {
-            @include main.text_data(left, 1.3rem);
+            @include main.text_data(left, 1.5rem);
 
-            padding: 5rem 1rem 2rem 1rem;
+            padding: 3rem 1rem 2rem 1rem;
             line-height: 3rem;
 
 
         }
     }
 
-    .about-img {
-        width: 50%;
-        margin: 2%;
-        background: main.$second-bg-color;
 
-        img {
-            width: 100%;
-        }
-
-    }
 
 }
 

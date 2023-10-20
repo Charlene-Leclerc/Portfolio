@@ -3,6 +3,56 @@
 .contact {
     background: main.$second-bg-color;
 
+    @media (min-width:1024px) {
+        label {
+
+            font-size: 2rem;
+        }
+
+        .formular {
+            padding: 4rem 6rem;
+        }
+
+        .submiting {
+            justify-content: space-between;
+        }
+
+    }
+
+    @media (min-width:768px) and (max-width: 1023px) {
+        label {
+
+            font-size: 1.8rem;
+        }
+
+        .formular {
+            padding: 4rem 6rem;
+        }
+
+        .submiting {
+            justify-content: space-between;
+        }
+    }
+
+    @media (max-width: 767px) {
+        label {
+
+            font-size: 1.5rem;
+        }
+
+        .formular {
+            padding: 2rem 2rem;
+        }
+
+        .submiting {
+            justify-content: center;
+        }
+    }
+
+    .row {
+        padding-bottom: 2rem;
+    }
+
     .formular {
         display: flex;
         justify-content: center;
@@ -10,7 +60,7 @@
         max-width: 600px;
         background: main.$bg-color;
         border-radius: 2rem;
-        padding: 4rem 6rem;
+
 
         form {
             display: inline-block;
@@ -22,7 +72,7 @@
         .submiting {
             display: flex;
             align-items: center;
-            justify-content: space-between;
+
 
             .send-state {
                 font-size: 2rem;
@@ -42,11 +92,6 @@
     }
 
 
-    label {
-        margin-left: 10px;
-
-        font-size: 2rem;
-    }
 
     input {
         margin-right: 2rem;

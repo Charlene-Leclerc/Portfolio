@@ -3,8 +3,52 @@
 .projects {
     background: main.$bg-color;
 
-    .head {
-        @include main.flex($justify: space-around);
+    @media (min-width: 1024px) {
+        .all {
+            h3 {
+                @include main.text_data($fontsize: 3rem);
+                margin-bottom: 4rem;
+            }
+
+            p {
+                @include main.text_data($fontsize: 2rem);
+            }
+
+            .games,
+            .web {
+                height: 320px;
+            }
+        }
+
+    }
+
+
+
+    @media (min-width:768px) and (max-width: 1023px) {
+        .all {
+            h3 {
+                @include main.text_data($fontsize: 2.5rem);
+                margin-bottom: 4rem;
+            }
+
+            p {
+                @include main.text_data($fontsize: 1.8rem);
+            }
+        }
+    }
+
+    @media (max-width: 767px) {
+        .all {
+            h3 {
+                @include main.text_data($fontsize: 2rem);
+                margin-bottom: 4rem;
+            }
+
+            p {
+                @include main.text_data($fontsize: 1.6rem);
+            }
+
+        }
     }
 
     .all {
@@ -26,7 +70,7 @@
             text-align: center;
             @include main.border(.2rem, main.$bg-color);
             transition: .5s ease;
-            height: 320px;
+
 
             &:hover {
                 border-color: main.$main-color;
@@ -50,22 +94,14 @@
                 }
             }
 
-            h2 {
-                @include main.text_data($fontsize: 3rem);
-            }
 
-            p {
-                @include main.text_data($fontsize: 2rem);
-            }
+
+
         }
 
     }
 
 
-
-    h2 {
-        margin-bottom: 4rem;
-    }
 }
 
 .game_projects,

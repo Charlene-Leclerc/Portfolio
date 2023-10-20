@@ -7,13 +7,10 @@
     padding: 2rem 5%;
     position: fixed !important;
     width: 100%;
+    z-index: 100;
 
 }
 
-.collapse {
-    justify-content: right;
-    margin: auto;
-}
 
 .nav-link {
     font-size: 1.7rem !important;
@@ -34,65 +31,14 @@
     color: main.$text-color !important;
 }
 
-/*.container-fluid {
-    position: fixed;
+.collapsed {
+    color: main.$text-color !important;
+}
 
-    background: main.$second-bg-color;
-    @include main.flex($justify: space-between);
-    z-index: 100;
+.navbar-toggler {
+    color: main.$text-color !important;
 
-
-
-    .nav-brand {
-        @include main.text_data(left, 2.5rem, 300);
-        color: main.$text-color;
+    .navbar-toggler-icon {
+        color: main.$text-color !important;
     }
-
-    .nav-activ {
-        color: main.$main-color !important;
-    }
-
-
-    .nav-brand {
-        @include main.text_data(left, 3rem);
-
-        &:hover {
-            cursor: pointer;
-        }
-    }
-
-    .nav-link,
-    .nav-activ {
-        font-size: 1.7rem;
-        padding: 1.4rem;
-
-        &:hover {
-            color: main.$main-color !important;
-            cursor: pointer;
-
-        }
-    }
-
-    .nav-link {
-        color: main.$text-color;
-    }
-
-    .back {
-        @include main.text_data(left, 1.7rem);
-
-    }
-
-    .sub-nav {
-        @include main.flex()
-    }
-
-    .fa-arrow-right-from-bracket {
-        @include main.text_data(left, 2.5rem);
-
-        &:hover {
-            color: main.$main-color !important;
-        }
-    }
-
-
-}*/
+}
