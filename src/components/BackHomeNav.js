@@ -10,11 +10,10 @@ const BackNavigation = ({ link }) => {
     return (
         <header className='header'>
             <Navbar collapseOnSelect expand="lg">
-                <Container>
-                    <div className="brand-box">
-                        <Link className='nav-brand' to='/home'>Portfolio</Link>
-                    </div>
-                    <Navbar.Collapse>
+                <Container fluid>
+                    <Navbar.Brand href="#home">Portfolio</Navbar.Brand>
+                    <Navbar.Toggle aria-controls="basic-navbar-nav" />
+                    <Navbar.Collapse id="basic-navbar-nav">
                         <Nav className="sub-nav">
                             <p className='back'>Retour vers l'accueil</p>
                             <Link to={link} className='nav-link' >
