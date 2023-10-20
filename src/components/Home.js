@@ -4,9 +4,11 @@ import avatar from '../images/Charlene_Avatar.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faLinkedinIn, faGithub } from '@fortawesome/free-brands-svg-icons';
 import CV from '../documents/CV_Charlene_Leclerc.pdf'
+
 const Home = () => {
 
     return (
+
         <section className="home">
             <div className="home-img">
                 <img src={avatar} alt="" />

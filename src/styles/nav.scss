@@ -5,6 +5,9 @@
 
     background-color: main.$second-bg-color;
     padding: 2rem 5%;
+    position: fixed !important;
+    width: 100%;
+
 }
 
 .collapse {
@@ -13,12 +16,12 @@
 }
 
 .nav-link {
-    font-size: 1.7rem;
-    padding: 0 1rem;
-    color: main.$text-color;
+    font-size: 1.7rem !important;
+    padding: 0 1rem !important;
+    color: main.$text-color !important;
 
     &:hover {
-        color: main.$main-color;
+        color: main.$main-color !important;
     }
 }
 
@@ -27,8 +30,8 @@
 }
 
 .navbar-brand {
-    font-size: 3rem;
-    color: main.$text-color;
+    font-size: 3rem !important;
+    color: main.$text-color !important;
 }
 
 /*.container-fluid {

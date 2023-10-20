@@ -14,12 +14,8 @@ import { EchoesData, HyperbawlData, KiraData } from './models/projects-models';
 
 
 function App() {
-
-
-
   return (
     <BrowserRouter>
-
       <ScrollToTop />
       <Routes>
         <Route path={baseUrl} element={<MainPage />} />

@@ -23,8 +23,8 @@ $main-color: #ee97ff;
 }
 
 body {
-    background: $bg-color;
-    color: $text-color;
+    background: $bg-color !important;
+    color: $text-color !important;
 }
 
 span {
@@ -33,17 +33,25 @@ span {
 
 .btn {
     display: inline-block;
-    padding: 1rem 2.8rem;
-    background: $main-color;
-    border-radius: 4rem;
+
+    background: $main-color !important;
+    border-radius: 4rem !important;
     box-shadow: 0 0 1rem $main-color;
-    font-size: 1.6rem;
-    color: $second-bg-color;
+
+    color: $second-bg-color !important;
     letter-spacing: .1rem;
-    font-weight: 600;
+    font-weight: 600 !important;
 
     &:hover {
         box-shadow: none;
+    }
+}
+
+@media (min-width: 1024) {
+
+    .btn {
+        font-size: 1.6rem !important;
+        padding: 1rem 2.8rem !important;
     }
 }
 

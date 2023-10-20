@@ -17,10 +17,25 @@ html {
   overflow-x: hidden;
 }
 
-section {
-  min-height: 100vh;
-  padding: 10rem 9% 2rem;
+@media (min-width: 1024px) {
+  section {
+    min-height: 100vh;
+    padding: 10rem 9% 2rem;
+  }
+}
 
+@media (min-width:768px) and (max-width: 1023px) {
+  section {
+    min-height: 50vh;
+    padding: 5rem 2% 2rem;
+  }
+}
+
+@media (max-width: 767px) {
+  section {
+    min-height: 50vh;
+    padding: 5rem 2% 2rem;
+  }
 }
 
 img {

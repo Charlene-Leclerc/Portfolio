@@ -15,22 +15,63 @@
         margin: auto;
 
 
-        .icon {
-            @include main.flex();
 
-            .logo {
-                padding: 2rem;
-                height: min-content;
-                margin: 4rem 0 4rem 0;
-                width: 100px;
-                height: 100px;
+        @media (min-width: 1024px) {
+            .icon {
+                @include main.flex();
 
-                p {
-                    font-size: 1.4rem;
+                .logo {
+
+
+                    margin: 4rem 0 4rem 0;
+                    padding: 2rem;
+
+                    p {
+                        font-size: 1.4rem;
+                    }
                 }
             }
-
         }
+
+        @media (min-width:768px) and (max-width: 1023px) {
+            .icon {
+                display: grid;
+                grid-template-columns: repeat(4, 2fr);
+
+                .logo {
+
+
+                    margin: 2rem 0 2rem 0;
+                    padding: 1rem;
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+            }
+        }
+
+        @media (max-width: 767px) {
+            .icon {
+                display: grid;
+                grid-template-columns: repeat(3, 2fr);
+
+                .logo {
+
+
+                    margin: 1rem 0 1rem 0;
+                    padding: 0.5rem;
+
+                    p {
+                        font-size: 1.4rem;
+                    }
+                }
+
+
+            }
+        }
+
 
         h3 {
             font-size: 3.2rem;
@@ -43,7 +84,7 @@
 
             padding: 5rem;
             line-height: 3rem;
-            width: 600px;
+
 
         }
     }
