@@ -6,14 +6,11 @@
 
     .about-box {
         background: main.$bg-color;
-        padding: 3rem 2rem 4rem;
-        border-radius: 2rem;
         @include main.flex($dir: column);
         text-align: center;
-        box-shadow: 0 0 1rem main.$main-color;
-        width: 75%;
         margin: auto;
-
+        border-radius: 2rem;
+        padding: 3rem 2rem 4rem;
     }
 
     @media (min-width: 1024px) {
@@ -31,6 +28,31 @@
                 }
             }
         }
+
+        h3 {
+            font-size: 3.2rem;
+
+        }
+
+        .resume {
+            @include main.text_data(left, 1.6rem);
+
+            padding: 5rem;
+            line-height: 3rem;
+
+
+        }
+
+        .about-box {
+
+
+
+            box-shadow: 0 0 1rem main.$main-color;
+            width: 75%;
+            margin: auto;
+
+        }
+
     }
 
     @media (min-width:768px) and (max-width: 1023px) {
@@ -48,6 +70,17 @@
                     font-size: 1.4rem;
                 }
             }
+        }
+
+        h3 {
+            font-size: 2.5rem;
+        }
+
+        .resume {
+            @include main.text_data(left, 1.6rem);
+
+            padding: 5rem;
+            line-height: 3rem;
 
         }
     }
@@ -55,56 +88,21 @@
     @media (max-width: 767px) {
         .icon {
             display: grid;
-            grid-template-columns: repeat(4, 2fr);
+            grid-template-columns: repeat(3, 2fr);
 
             .logo {
 
-                width: 70px;
-                margin: 1rem 1rem 0 1rem;
-                padding: 0.5rem;
+                width: 40px;
+                margin: 2rem 1rem 0 1rem;
+                @include main.flex($dir: column, $justify: flex-start);
 
                 p {
-                    font-size: 1.4rem;
+                    font-size: 1.1rem;
+
                 }
             }
-
-
-        }
-    }
-
-    @media (min-width: 1024) {
-        h3 {
-            font-size: 3.2rem;
-
         }
 
-        .resume {
-            @include main.text_data(left, 1.6rem);
-
-            padding: 5rem;
-            line-height: 3rem;
-
-
-        }
-    }
-
-    @media (min-width:768px) and (max-width: 1023px) {
-        h3 {
-            font-size: 2.5rem;
-
-        }
-
-        .resume {
-            @include main.text_data(left, 1.6rem);
-
-            padding: 5rem;
-            line-height: 3rem;
-
-
-        }
-    }
-
-    @media (max-width: 767px) {
         h3 {
             font-size: 2rem;
 
@@ -119,8 +117,6 @@
 
         }
     }
-
-
 
     .about-img {
         width: 50%;

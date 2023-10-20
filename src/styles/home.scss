@@ -3,8 +3,13 @@
 .home {
     @include main.flex();
 
+    .content {
+        display: flex;
+    }
+
     .home-img {
         width: 30vw;
+
 
         img {
             width: 100%;

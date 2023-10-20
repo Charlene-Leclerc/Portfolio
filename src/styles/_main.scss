@@ -3,11 +3,11 @@ $second-bg-color: #323946;
 $text-color: #fff;
 $main-color: #ee97ff;
 
-@mixin flex($display: flex, $dir: line, $justify: center) {
+@mixin flex($display: flex, $dir: line, $justify: center, $align: center) {
     display: $display;
     flex-direction: $dir;
     justify-content: $justify;
-    align-items: center;
+    align-items: $align;
 }
 
 @mixin text_data($align: center, $fontsize, $font-weight: 400, $color: $text-color) {
