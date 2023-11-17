@@ -11,6 +11,10 @@
 
 }
 
+#basic-navbar-nav{
+    justify-content: flex-end;
+    margin-right: 5rem;
+}
 
 .nav-link {
     font-size: 1.7rem !important;
@@ -29,6 +33,7 @@
 .navbar-brand {
     font-size: 3rem !important;
     color: main.$text-color !important;
+    margin-left: 5rem;
 }
 
 .collapsed {
